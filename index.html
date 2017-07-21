@@ -1,5 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
+<head>
+<title> new document </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"   />
+<meta name="viewport" content="initial-scale=1">
+<style>
+.process-bar
+{
+    width:100px;
+    display:inline-block;
+    *zoom:1;
+}
+.pb-wrapper
+{
+    border:1px solid #cfd0d2;
+    position:relative;
+    background:#cfd0d2;
+    border-radius: 8px;
+}
+.pb-container
+{
+    height:12px;
+    position:relative;
+    left:-1px;
+    margin-right:-2px;
+    font:1px/0 arial;
+    padding:1px;
+}
+.pb-highlight
+{
+    position:absolute;
+    left:0;
+    top:0;
+    _top:1px;
+    width:100%;
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    height:6px;
+    background:white;
+    font-size:1px;
+    line-height:0;
+    z-index:1
+}
+.pb-text
+{
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    text-align:center;
+    font:10px/12px arial;
+    color:black;
+    font:10px/12px arial
+}
+</style>
+</head>
 <body>
-<a href="index.php">hhh</a>
+    <div class="process-bar skin-green">
+        <div class="pb-wrapper">
+            <div class="pb-highlight"></div>
+            <div class="pb-container">
+                <div class="pb-text">50%</div>
+                <div class="pb-value" style="height: 100%;width: 50%;background: #19d73d;border-radius: 8px;"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
